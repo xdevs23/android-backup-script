@@ -188,7 +188,7 @@ if $extra_backup; then
 
     if adb shell busybox [ -d /data/unencrypted ]; then
         mkdir -p unencrypted
-        pushd
+        pushd unencrypted
 
         adb pull /data/unencrypted/. .
 
